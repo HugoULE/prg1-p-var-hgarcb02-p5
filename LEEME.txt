@@ -1,0 +1,21 @@
+Practica P-VAR
+
+Alumno: Adrián Fernández
+
+Horas dedicadas: 4h
+
+Problemas surgidos al realizar la practica: 
+
+Respuestas a la preguntas:
+030101 04
+El double almacena los nújmeros en binario y hay decimales que no se pueden representar exactamente en binario, ya que funciona con potencias de 2. Por eso, la resta se hace con los valores de los decimales aproximados.
+
+030101 05
+En cambio, aquí los decimales se guardan en BigDecimal, que los lee como si fuesen texto y guarda su valor exactamente.
+
+030104 04
+Al pasar de double a float, la variable Gigante da como resultado Infinity porque 1.766e289 es demasiado grande para representarse con un float. La variable Normal da el mismo resultado porque float tiene, aunque menos que el double, presición suficiente para representarlo. La variable Minimo da como resultado 0.0 porque el valor 0.2E-256 es demasiado pequeño para poder representarlo con la precisión de un float.
+Al convertir 130 a byte, la variable b da -126 ya que el número es muy grande para representarse en un byte.
+Al converetir 32770 a short, en s se obtiene -32766 porque 32770 es más grande que lo máximo que puede representarse en un short.
+Al convertir 2147483650L a int, en i se obtiene -2147483646 porque es mas grande que lo máximo que puede representarse en un int.
+Por último, el literal 1.3e22 es de tipo double. Por eso para asignarlo a una variable float es necesario convertirlo a un float.
